@@ -9,12 +9,12 @@ public class Reserva {
     private String habitacion;
 
     //Constructor
-    public Reserva(String fechaIngreso, String fechaSalida, String habitacion, int id, String nombreCliente) {
+    public Reserva(int id, String nombreCliente, String fechaIngreso, String fechaSalida, String habitacion) {
+        this.id = id;
+        this.nombreCliente = nombreCliente;
         this.fechaIngreso = fechaIngreso;
         this.fechaSalida = fechaSalida;
         this.habitacion = habitacion;
-        this.id = id;
-        this.nombreCliente = nombreCliente;
     }
     public Reserva() {
     }
